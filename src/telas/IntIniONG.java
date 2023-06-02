@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package telas;
-import telas.IntPedidoOng;
 
 /**
  *
@@ -124,7 +123,8 @@ public class IntIniONG extends javax.swing.JFrame {
     }//GEN-LAST:event_SairActionPerformed
 
     private void GerenciarPedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GerenciarPedidosActionPerformed
-        // TODO add your handling code here:
+        IntPedidoRes telar = new IntPedidoRes();
+        telar.setVisible(true);
     }//GEN-LAST:event_GerenciarPedidosActionPerformed
 
     /**

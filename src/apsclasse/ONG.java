@@ -1,13 +1,16 @@
-package aps;
+package apsclasse;
 
 
+import apsclasse.Pedido;
+import apsclasse.Restaurante;
+import apsclasse.Usuario;
 import java.util.Date;
 import telas.IntCasRes;
 
 public class ONG
         
         extends Usuario {
-        private int codigo;
+        private final int codigo;
         private static int posicaoAutoIncremental = 1;
 	public ONG( String user_nome, String user_email, String user_senha, String user_endereco, int user_cnpj) {
 		

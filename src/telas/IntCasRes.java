@@ -4,8 +4,8 @@
  */
 package telas;
 
-import aps.APS;
-import aps.Restaurante;
+import apsclasse.APSFOMEZERO;
+import apsclasse.Restaurante;
 import java.lang.Integer;
 import javax.swing.JOptionPane;
         
@@ -108,7 +108,6 @@ public class IntCasRes extends javax.swing.JFrame {
             }
         });
 
-        CampoSenha.setText("jPasswordField1");
         CampoSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CampoSenhaActionPerformed(evt);
@@ -141,13 +140,11 @@ public class IntCasRes extends javax.swing.JFrame {
                     .addComponent(CampoCNPJ)
                     .addComponent(CampoEndereço, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(Cancelar)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Salvar))
-                            .addComponent(CampoSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(Cancelar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Salvar)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(CampoSenha))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -220,7 +217,7 @@ public class IntCasRes extends javax.swing.JFrame {
 
         this.dispose();
         
-        APS.cadastrarRestaurante(Restaurante);
+        APSFOMEZERO.cadastrarRestaurante(Restaurante);
     }//GEN-LAST:event_SalvarActionPerformed
 
     private void CampoEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoEmailActionPerformed

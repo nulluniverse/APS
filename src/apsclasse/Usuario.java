@@ -1,4 +1,4 @@
-package aps;
+package apsclasse;
 
 public abstract class Usuario {
 	

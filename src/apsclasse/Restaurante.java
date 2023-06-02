@@ -1,4 +1,4 @@
-package aps;
+package apsclasse;
 
 import java.util.List;
 import telas.IntCasRes;

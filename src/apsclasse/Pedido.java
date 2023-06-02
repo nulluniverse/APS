@@ -1,12 +1,12 @@
-package aps;
+package apsclasse;
 import java.util.Date;
 
 public class Pedido {
-	public String nome;
-	public String descricao;
-	public Date validade;
-	public boolean urgente;
-	public String ONG_nome;
+	private String nome;
+	private String descricao;
+	private Date validade;
+	private boolean urgente;
+	private String ONG_nome;
 
 
 

@@ -1,11 +1,13 @@
+package telas;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package telas;
+
         
-import aps.APS;
-import aps.ONG;
+import apsclasse.APSFOMEZERO;
+import apsclasse.ONG;
 import java.lang.Integer;
 import javax.swing.JOptionPane;
 
@@ -110,8 +112,6 @@ public class IntCasONG extends javax.swing.JFrame {
             }
         });
 
-        CampoSenha.setText("jPasswordField1");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -138,13 +138,11 @@ public class IntCasONG extends javax.swing.JFrame {
                     .addComponent(CampoCNPJ)
                     .addComponent(CampoEndereço, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(Cancelar)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Salvar))
-                            .addComponent(CampoSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(Cancelar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Salvar)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(CampoSenha))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -223,7 +221,7 @@ public class IntCasONG extends javax.swing.JFrame {
         
         this.dispose();
         
-        APS.cadastrarONG(ong);
+        APSFOMEZERO.cadastrarONG(ong);
     }//GEN-LAST:event_SalvarActionPerformed
 
     /**
